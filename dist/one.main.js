@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _two__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./two */ \"./src/two.js\");\n\r\nconst x = 3;\r\nconsole.log(x + _two__WEBPACK_IMPORTED_MODULE_0__[\"default\"].y);\n\n//# sourceURL=webpack:///./src/one.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _two__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./two */ \"./src/two.js\");\n\nvar x = 3;\nconsole.log(x + _two__WEBPACK_IMPORTED_MODULE_0__[\"default\"].y);\n\n//# sourceURL=webpack:///./src/one.js?");
 
 /***/ }),
 
@@ -106,7 +106,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _two
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\r\n    y: 12\r\n});\n\n//# sourceURL=webpack:///./src/two.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  y: 12\n});\n\n//# sourceURL=webpack:///./src/two.js?");
 
 /***/ })
 

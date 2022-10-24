@@ -1,4 +1,5 @@
-import str from "./Src"
-const h3 = "<h3>标题</h3>"
-const app = document.getElementById("app")
-app.innerHTML = h3 + str.link
+import React from "react"
+import ReactDom from "react-dom"
+import App from "./App"
+ReactDom.render(<App />,
+    document.getElementById('app'))
