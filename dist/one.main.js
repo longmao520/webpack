@@ -94,7 +94,24 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _two__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./two */ \"./src/two.js\");\nvar _class;\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, \"prototype\", { writable: false }); return Constructor; }\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nvar x = 3;\nconsole.log(x + _two__WEBPACK_IMPORTED_MODULE_0__[\"default\"].y);\n// 装饰器语法  @testtable 代表的是 立即调用函数 传入的第一个参数应为是 类 \nfunction testtable(target) {\n  target.isShow = true; // 在类上添加属性\n}\n// \nvar Mytest = testtable(_class = /*#__PURE__*/_createClass(function Mytest() {\n  _classCallCheck(this, Mytest);\n})) || _class;\nconsole.log(\"装饰器语法\", Mytest.isShow);\n\n//# sourceURL=webpack:///./src/one.js?");
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _two__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./two */ "./src/two.js");
+var _class;
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var x = 3;
+console.log(x + _two__WEBPACK_IMPORTED_MODULE_0__["default"].y);
+// 装饰器语法  @testtable 代表的是 立即调用函数 传入的第一个参数应为是 类 
+function testtable(target) {
+  target.isShow = true; // 在类上添加属性
+}
+// 
+var Mytest = testtable(_class = /*#__PURE__*/_createClass(function Mytest() {
+  _classCallCheck(this, Mytest);
+})) || _class;
+console.log("装饰器语法", Mytest.isShow);
 
 /***/ }),
 
@@ -106,8 +123,12 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _two
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  y: 12\n});\n\n//# sourceURL=webpack:///./src/two.js?");
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+  y: 12
+});
 
 /***/ })
 
 /******/ });
+//# sourceMappingURL=one.main.js.map
