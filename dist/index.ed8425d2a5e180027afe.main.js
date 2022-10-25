@@ -2293,10 +2293,10 @@ for (var i = 0; i < DOMIterables.length; i++) {
 
 /***/ }),
 
-/***/ "./node_modules/_css-loader@4.3.0@css-loader/dist/cjs.js!./src/css/public.css":
-/*!************************************************************************************!*\
-  !*** ./node_modules/_css-loader@4.3.0@css-loader/dist/cjs.js!./src/css/public.css ***!
-  \************************************************************************************/
+/***/ "./node_modules/_css-loader@4.3.0@css-loader/dist/cjs.js!./node_modules/_less-loader@7.3.0@less-loader/dist/cjs.js!./src/less/public.less":
+/*!************************************************************************************************************************************************!*\
+  !*** ./node_modules/_css-loader@4.3.0@css-loader/dist/cjs.js!./node_modules/_less-loader@7.3.0@less-loader/dist/cjs.js!./src/less/public.less ***!
+  \************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2308,7 +2308,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_4_3_0_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "body {\r\n    font: 14px/1.5em 微软雅黑;\r\n    color: #999;\r\n}\r\n\r\ndiv#app {\r\n    background: #09f;\r\n    color: #fff;\r\n    width: 400px;\r\n    height: 400px;\r\n}\r\n\r\ndiv#app div {\r\n    width: 200px;\r\n    height: 200px;\r\n    background: #090;\r\n}", "",{"version":3,"sources":["webpack://src/css/public.css"],"names":[],"mappings":"AAAA;IACI,qBAAqB;IACrB,WAAW;AACf;;AAEA;IACI,gBAAgB;IAChB,WAAW;IACX,YAAY;IACZ,aAAa;AACjB;;AAEA;IACI,YAAY;IACZ,aAAa;IACb,gBAAgB;AACpB","sourcesContent":["body {\r\n    font: 14px/1.5em 微软雅黑;\r\n    color: #999;\r\n}\r\n\r\ndiv#app {\r\n    background: #09f;\r\n    color: #fff;\r\n    width: 400px;\r\n    height: 400px;\r\n}\r\n\r\ndiv#app div {\r\n    width: 200px;\r\n    height: 200px;\r\n    background: #090;\r\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, "body {\n  font-size: 14px;\n  font-family: 微软雅黑;\n  color: #fff;\n}\ndiv#app {\n  background: #f90;\n  color: #fff;\n  width: 400px;\n  height: 400px;\n}\ndiv#app div {\n  background: #090;\n  width: 200px;\n  height: 200px;\n}\n", "",{"version":3,"sources":["webpack://src/less/public.less"],"names":[],"mappings":"AAEA;EACI,eAAA;EACA,iBAAA;EACA,WAAA;AADJ;AAIA;EACI,gBAAA;EACA,WAAA;EACA,YAAA;EACA,aAAA;AAFJ;AAKA;EACI,gBAAA;EACA,YAAA;EACA,aAAA;AAHJ","sourcesContent":["@value: 200px;\n\nbody {\n    font-size: 14px;\n    font-family: 微软雅黑;\n    color: #fff;\n}\n\ndiv#app {\n    background: #f90;\n    color: #fff;\n    width: 400px;\n    height: 400px;\n}\n\ndiv#app div {\n    background: #090;\n    width: @value;\n    height: @value;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -32581,34 +32581,6 @@ var App = /*#__PURE__*/function (_Component) {
 
 /***/ }),
 
-/***/ "./src/css/public.css":
-/*!****************************!*\
-  !*** ./src/css/public.css ***!
-  \****************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_style_loader_2_0_0_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/_style-loader@2.0.0@style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/_style-loader@2.0.0@style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-/* harmony import */ var _node_modules_style_loader_2_0_0_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_2_0_0_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_4_3_0_css_loader_dist_cjs_js_public_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../node_modules/_css-loader@4.3.0@css-loader/dist/cjs.js!./public.css */ "./node_modules/_css-loader@4.3.0@css-loader/dist/cjs.js!./src/css/public.css");
-
-            
-
-var options = {};
-
-options.insert = "head";
-options.singleton = false;
-
-var update = _node_modules_style_loader_2_0_0_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_4_3_0_css_loader_dist_cjs_js_public_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = (_node_modules_css_loader_4_3_0_css_loader_dist_cjs_js_public_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
-
-/***/ }),
-
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -32623,14 +32595,43 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/_react-dom@17.0.2@react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./App */ "./src/App.js");
-/* harmony import */ var _css_public_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./css/public.css */ "./src/css/public.css");
+/* harmony import */ var _less_public_less__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./less/public.less */ "./src/less/public.less");
 
 
 
+// import './css/public.css'
 
 react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_App__WEBPACK_IMPORTED_MODULE_2__["default"], null), document.getElementById('app'));
+
+/***/ }),
+
+/***/ "./src/less/public.less":
+/*!******************************!*\
+  !*** ./src/less/public.less ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_2_0_0_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/_style-loader@2.0.0@style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/_style-loader@2.0.0@style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_2_0_0_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_2_0_0_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_4_3_0_css_loader_dist_cjs_js_node_modules_less_loader_7_3_0_less_loader_dist_cjs_js_public_less__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../node_modules/_css-loader@4.3.0@css-loader/dist/cjs.js!../../node_modules/_less-loader@7.3.0@less-loader/dist/cjs.js!./public.less */ "./node_modules/_css-loader@4.3.0@css-loader/dist/cjs.js!./node_modules/_less-loader@7.3.0@less-loader/dist/cjs.js!./src/less/public.less");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_2_0_0_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_4_3_0_css_loader_dist_cjs_js_node_modules_less_loader_7_3_0_less_loader_dist_cjs_js_public_less__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (_node_modules_css_loader_4_3_0_css_loader_dist_cjs_js_node_modules_less_loader_7_3_0_less_loader_dist_cjs_js_public_less__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
 
 /***/ })
 
 /******/ });
-//# sourceMappingURL=index.ae4b449a4f5493f06af1.main.js.map
+//# sourceMappingURL=index.ed8425d2a5e180027afe.main.js.map
