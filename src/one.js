@@ -1,5 +1,5 @@
 import two from "./two"
-import '@babel/polyfill'
+
 const x = 3;
 console.log(x + two.y);
 // 装饰器语法  @testtable 代表的是 立即调用函数 传入的第一个参数应为是 类 

@@ -1,11 +1,7 @@
 // 将options  抽离到 .babelrc 文件中
 {
     "presets": [
-        ['@babel/preset-env',
-            {
-                "useBuiltIns": "usage"
-            }
-        ],
+        '@babel/preset-env',
         '@babel/preset-react'
     ],
     "plugins": [
@@ -13,6 +9,16 @@
             "@babel/plugin-proposal-decorators",
             {
                 "legacy": true
+            }
+        ],
+        [
+            "@babel/plugin-transform-runtime",
+            {
+                "absoluteRuntime": false,
+                "corejs": 2,
+                "helpers": true,
+                "regenerator": true,
+                "useESModules": false
             }
         ]
     ]
