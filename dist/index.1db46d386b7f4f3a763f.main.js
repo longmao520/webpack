@@ -2293,10 +2293,10 @@ for (var i = 0; i < DOMIterables.length; i++) {
 
 /***/ }),
 
-/***/ "./node_modules/_css-loader@4.3.0@css-loader/dist/cjs.js!./node_modules/_less-loader@7.3.0@less-loader/dist/cjs.js!./src/less/public.less":
-/*!************************************************************************************************************************************************!*\
-  !*** ./node_modules/_css-loader@4.3.0@css-loader/dist/cjs.js!./node_modules/_less-loader@7.3.0@less-loader/dist/cjs.js!./src/less/public.less ***!
-  \************************************************************************************************************************************************/
+/***/ "./node_modules/_css-loader@4.3.0@css-loader/dist/cjs.js!./node_modules/_sass-loader@10.3.1@sass-loader/dist/cjs.js!./src/sass/public.scss":
+/*!*************************************************************************************************************************************************!*\
+  !*** ./node_modules/_css-loader@4.3.0@css-loader/dist/cjs.js!./node_modules/_sass-loader@10.3.1@sass-loader/dist/cjs.js!./src/sass/public.scss ***!
+  \*************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2308,7 +2308,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_4_3_0_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "body {\n  font-size: 14px;\n  font-family: 微软雅黑;\n  color: #fff;\n}\ndiv#app {\n  background: #f90;\n  color: #fff;\n  width: 400px;\n  height: 400px;\n}\ndiv#app div {\n  background: #090;\n  width: 200px;\n  height: 200px;\n}\n", "",{"version":3,"sources":["webpack://src/less/public.less"],"names":[],"mappings":"AAEA;EACI,eAAA;EACA,iBAAA;EACA,WAAA;AADJ;AAIA;EACI,gBAAA;EACA,WAAA;EACA,YAAA;EACA,aAAA;AAFJ;AAKA;EACI,gBAAA;EACA,YAAA;EACA,aAAA;AAHJ","sourcesContent":["@value: 200px;\n\nbody {\n    font-size: 14px;\n    font-family: 微软雅黑;\n    color: #fff;\n}\n\ndiv#app {\n    background: #f90;\n    color: #fff;\n    width: 400px;\n    height: 400px;\n}\n\ndiv#app div {\n    background: #090;\n    width: @value;\n    height: @value;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, "@charset \"UTF-8\";\nbody {\n  font-size: 14px;\n  font-family: 微软雅黑;\n  color: #fff; }\n\ndiv#app {\n  background: #ff0;\n  color: #fff;\n  width: 400px;\n  height: 400px; }\n\ndiv#app div {\n  background: #090;\n  width: 200px;\n  height: 200px; }\n", "",{"version":3,"sources":["webpack://src/sass/public.scss"],"names":[],"mappings":"AAAA,gBAAgB;AAEhB;EACI,eAAe;EACf,iBAAa;EACb,WAAW,EAAA;;AAGf;EACI,gBAAgB;EAChB,WAAW;EACX,YAAY;EACZ,aAAa,EAAA;;AAGjB;EACI,gBAAgB;EAChB,YAjBS;EAkBT,aAlBS,EAAA","sourcesContent":["$value: 200px;\r\n\r\nbody {\r\n    font-size: 14px;\r\n    font-family: 微软雅黑;\r\n    color: #fff;\r\n}\r\n\r\ndiv#app {\r\n    background: #ff0;\r\n    color: #fff;\r\n    width: 400px;\r\n    height: 400px;\r\n}\r\n\r\ndiv#app div {\r\n    background: #090;\r\n    width: $value;\r\n    height: $value;\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -32595,19 +32595,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/_react-dom@17.0.2@react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./App */ "./src/App.js");
-/* harmony import */ var _less_public_less__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./less/public.less */ "./src/less/public.less");
+/* harmony import */ var _sass_public_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./sass/public.scss */ "./src/sass/public.scss");
 
 
 
 // import './css/public.css'
+// import "./less/public.less"
 
 react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_App__WEBPACK_IMPORTED_MODULE_2__["default"], null), document.getElementById('app'));
 
 /***/ }),
 
-/***/ "./src/less/public.less":
+/***/ "./src/sass/public.scss":
 /*!******************************!*\
-  !*** ./src/less/public.less ***!
+  !*** ./src/sass/public.scss ***!
   \******************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -32616,7 +32617,7 @@ react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEB
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_2_0_0_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/_style-loader@2.0.0@style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/_style-loader@2.0.0@style-loader/dist/runtime/injectStylesIntoStyleTag.js");
 /* harmony import */ var _node_modules_style_loader_2_0_0_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_2_0_0_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_4_3_0_css_loader_dist_cjs_js_node_modules_less_loader_7_3_0_less_loader_dist_cjs_js_public_less__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../node_modules/_css-loader@4.3.0@css-loader/dist/cjs.js!../../node_modules/_less-loader@7.3.0@less-loader/dist/cjs.js!./public.less */ "./node_modules/_css-loader@4.3.0@css-loader/dist/cjs.js!./node_modules/_less-loader@7.3.0@less-loader/dist/cjs.js!./src/less/public.less");
+/* harmony import */ var _node_modules_css_loader_4_3_0_css_loader_dist_cjs_js_node_modules_sass_loader_10_3_1_sass_loader_dist_cjs_js_public_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../node_modules/_css-loader@4.3.0@css-loader/dist/cjs.js!../../node_modules/_sass-loader@10.3.1@sass-loader/dist/cjs.js!./public.scss */ "./node_modules/_css-loader@4.3.0@css-loader/dist/cjs.js!./node_modules/_sass-loader@10.3.1@sass-loader/dist/cjs.js!./src/sass/public.scss");
 
             
 
@@ -32625,13 +32626,13 @@ var options = {};
 options.insert = "head";
 options.singleton = false;
 
-var update = _node_modules_style_loader_2_0_0_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_4_3_0_css_loader_dist_cjs_js_node_modules_less_loader_7_3_0_less_loader_dist_cjs_js_public_less__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+var update = _node_modules_style_loader_2_0_0_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_4_3_0_css_loader_dist_cjs_js_node_modules_sass_loader_10_3_1_sass_loader_dist_cjs_js_public_scss__WEBPACK_IMPORTED_MODULE_1__["default"], options);
 
 
 
-/* harmony default export */ __webpack_exports__["default"] = (_node_modules_css_loader_4_3_0_css_loader_dist_cjs_js_node_modules_less_loader_7_3_0_less_loader_dist_cjs_js_public_less__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+/* harmony default export */ __webpack_exports__["default"] = (_node_modules_css_loader_4_3_0_css_loader_dist_cjs_js_node_modules_sass_loader_10_3_1_sass_loader_dist_cjs_js_public_scss__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
 
 /***/ })
 
 /******/ });
-//# sourceMappingURL=index.ed8425d2a5e180027afe.main.js.map
+//# sourceMappingURL=index.1db46d386b7f4f3a763f.main.js.map
